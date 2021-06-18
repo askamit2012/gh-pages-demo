@@ -1,30 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
 div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: auto;
+  width: 100%;
   background-image: linear-gradient(#fff, #ccc);
+  font-family: "Dosis";
+  position: relative;
+}
+
+.btn1 {
+  margin-top: 10px;
+}
+
+.btn2 {
+  position: fixed;
+  top: 0%;
+  right: 2%;
+  margin-top: 5px;
+  font-size: larger;
+  transition: transform 1s ease-in-out, color 1s, box-shadow 1s;
+}
+
+.editBtn {
+  position: absolute;
+  bottom: -2%;
+  left: 0%;
+}
+
+.btn2:focus :hover {
+  /* transform: scale(1.3); */
+  transform: rotate("90deg");
+  /* transform: scale(1.3); */
+}
+
+.btn2:hover {
+  transform: scale(1.3);
+  transform: rotate(180deg);
+  color: red;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .singleUser {
   height: 240px;
-  width: auto;
-  background: #fff;
+  width: 75%;
+  background: rgb(207, 142, 142);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: stretch;
+  margin: 10px 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  border-radius: 10px 20px 30px 40px/40% 30px 20px 10px;
+  transition: skew 1s ease, box-shadow 1s;
+}
+
+.singleUser:hover {
+  transform: skew(2deg, -2deg);
+  /* tra */
 }
 
 .singleUser span {
   font-size: 18px;
-  color: aqua;
+  color: rgb(0, 0, 0);
+  margin: 5px 0;
+  line-height: 1.4em;
+  font-weight: 600;
 }
 
 .imgStyle {
-  border: 1px solid rgb(36, 26, 26);
-  height: 96px;
-  /* width: auto; */
-  object-fit: contain;
+  /* border: 1px solid rgb(36, 26, 26); */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50px 40px 30px 20%/10% 40% 30% 20%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 600px) {
+  .singleUser {
+    width: 95%;
+    margin: 20px 0;
+    /* padding: 0 10px; */
+    /* font-size: 1.2rem; */
+  }
+  .btn1 {
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  .btnEdit {
+    /* transform: translateX(50%); */
+    left: 50%;
+  }
 }

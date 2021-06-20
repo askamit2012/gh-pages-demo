@@ -48,9 +48,9 @@ const useStyles = makeStyles((theme) => ({
   },
   avatarItem: {},
   avatar: {
-    height: "auto",
-    width: "100%",
-    objectFit: "contain",
+    height: "128px",
+    width: "128px",
+    objectFit: "cover",
     shadows: "10",
   },
   contentItem: {

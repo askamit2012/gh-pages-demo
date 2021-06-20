@@ -1,0 +1,31 @@
+.labelEl {
+  outline: none;
+  border-bottom: none;
+  color: red;
+  font-weight: bold;
+  /* display: none; */
+  /* background: purple; */
+}
+
+.inputEl {
+  outline: none;
+  border-bottom: none;
+  /* border: 2px solid blue; */
+}
+
+.inputEl::before {
+  content: " ";
+  border-bottom: none;
+  border: none;
+}
+
+.inputEl::after {
+  content: " ";
+  border-bottom: none;
+  border: none;
+}
+
+.inputEl:hover {
+  outline: none;
+  border: "2px solid red";
+}
